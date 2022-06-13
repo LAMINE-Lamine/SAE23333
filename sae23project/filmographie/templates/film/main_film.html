@@ -14,9 +14,9 @@
              <li class="descrip"> Despcription de la categorie :{{l.descriptif}} </li>
 
 
-        {{l}}<div class="separ-button"><button><a href="/affiche-film/{{l.id}}/">AFFICHE</a></button><button><a href="/update-film/{{l.id}}/">UPDATE</a></button><button><a href="/delete-film/{{l.id}}/">DELETE</a></button></div>
-        {% endfor %}
+        {{l}}<div class="separ-button"><button><a href="/affiche-film/{{l.id}}/">Afficher</a></button><button><a href="/update-film/{{l.id}}/">UPDATE</a></button><button><a href="/delete-film/{{l.id}}/">Supprimer</a></button></div>
+
     </div>
 
-
+{% endfor %}
 {% endblock %}

@@ -13,7 +13,6 @@ categorie
         {% for l in categories %}
              <li> la categorie du film est film: '{{l.nom}}' </li>
              <li class="descrip"> Despcription de la categorie :{{l.descriptif}} </li>
-
         </article>
 
         {{l}}<div class="separ-button"><button><a href="/affiche-categorie/{{l.id}}/">AFFICHE</a></button><button><a href="/update-categorie/{{l.id}}/">UPDATE</a></button><button><a href="/delete-categorie/{{l.id}}/">DELETE</a></button></div>

@@ -24,14 +24,14 @@ class film(models.Model):
     realisateur = models.CharField(max_length=100)
 
 
-    def __str__(self):
-        str = "categories: "
-        for i in list(self.categorie.all()):
-            str = str + i.nom + " , "
+   # def __str__(self):
+       # str = "categories: "
+       # for i in list(self.categorie.all()):
+            #str = str + i.nom + " , "
 
 
-        chaine = f"{self.nom} | {self.titre} | {self.annee_de_sortie} | {self.realisateur} | {str}"
-        return chaine
+        #chaine = f"{self.nom} | {self.titre} | {self.annee_de_sortie} | {self.realisateur} | {str}"
+        #return chaine
 
     def dictionnaire(self):
         return {"nom": self.nom ,"titre": self.titre, "annee_de_sortie": self.annee_de_sortie, "affiche": self.affiche,"realisateur": self.realisateur, "categorie": self.categorie}
